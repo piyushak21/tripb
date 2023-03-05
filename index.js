@@ -10,10 +10,6 @@ import tripmqtt from "./controllers/tripmqtt.js";
 
 const app = express();
 
-console.log("Checking")
-app.get("/test", (req, res) => {
-  res.send("check api")
-}) 
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/auth", authRoutes);
