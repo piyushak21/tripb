@@ -1,8 +1,10 @@
 import mysql from "mysql";
 
 export const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "nodeapi",
+   host: "stknportal.cuce9do7mxez.ap-south-1.rds.amazonaws.com",
+  user: "starkennadmin",
+  password: "4x7SbTLSLH5NC9Yn43E0",
+  database: "stakennportal",
+  port: 3306,
+  connectionLimit: 10,
 });
