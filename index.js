@@ -7,8 +7,11 @@ import ongoingTripRoutes from "./routes/ongoingTrip.js";
 import cookieParser from "cookie-parser";
 import tripmqtt from "./controllers/tripmqtt.js";
 // import testmqtt from "./controllers/testmqtt.js";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors({ origin: "*" }));
 
 app.use(express.json());
 app.use(cookieParser());
